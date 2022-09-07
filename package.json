@@ -1,7 +1,7 @@
 {
   "name": "social-network-api",
   "version": "1.0.0",
-  "description": "social-network-API-assignment",
+  "description": "18. NoSQL Challenge",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/JMBM9/Thinkathought"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
   },
   "homepage": "",
   "dependencies": {
+    "expres": "^0.0.5",
     "express": "^4.18.1",
     "moment": "^2.29.4",
     "mongoose": "^5.13.15"

@@ -1,6 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
-
+//insomnia format
 const ReactionSchema = new Schema({
     reactionId: {
         type: Schema.Types.ObjectId,
@@ -9,7 +9,7 @@ const ReactionSchema = new Schema({
     reactionBody: {
         type: String,
         required: true,
-        maxlength: 285
+        maxlength: 280
     },
     username: {
         type: String,
@@ -35,7 +35,7 @@ const ThoughtSchema = new Schema({
         type: String,
         required: true,
         minlength: 1,
-        maxlength: 285
+        maxlength: 280
     },
     createdAt: {
         type: Date,
@@ -62,8 +62,8 @@ ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-
+// create the Thought model using the ThoughtSchema
 const Thought = model('Thought', ThoughtSchema);
 
-
+// export the Thought model
 module.exports = Thought;
